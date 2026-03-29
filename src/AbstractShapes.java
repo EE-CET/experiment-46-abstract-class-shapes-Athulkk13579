@@ -20,14 +20,15 @@ class Hexagon extends Shape {
     }
 }
 
-public class Main {
+public class AbstractShapes {
     public static void main(String[] args) {
-        Rectangle r = new Rectangle();
-        Triangle t = new Triangle();
-        Hexagon h = new Hexagon();
-        
-        r.numberOfSides();
-        t.numberOfSides();
-        h.numberOfSides();
+
+        Shape s1 = new Rectangle();
+        Shape s2 = new Triangle();
+        Shape s3 = new Hexagon();
+
+        s1.numberOfSides();
+        s2.numberOfSides();
+        s3.numberOfSides();
     }
 }
